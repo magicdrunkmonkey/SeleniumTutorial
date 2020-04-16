@@ -13,12 +13,12 @@ import java.io.IOException;
 
 public class Main {
 
-    WebDriver obj;
+    // WebDriver obj;
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
         //System.setProperty("webdriver.gecko.driver","C:\\Gecko\\geckodriver.exe"); //Firefox webdriver
-        System.setProperty("webdriver.chrome.driver","C:\\Dev_Drivers\\Chrome_Webdriver\\chromedriver.exe"); //Chrome webdriver
+       // System.setProperty("webdriver.chrome.driver","C:\\Dev_Drivers\\Chrome_Webdriver\\chromedriver.exe"); //Chrome webdriver
         //System.setProperty("webdriver.edge.driver","C:\\Dev_Drivers\\MS_Edge_Webdriver\\msedgedriver.exe"); //Edge webdriver
 
         WebDriver obj = new ChromeDriver();
@@ -32,7 +32,7 @@ public class Main {
 
         Thread.sleep(2000);
 
-        ImageIO.write(screenshot.getImage(),"PNG",new File("C:\\Users\\george.sydby\\IdeaProjects\\Test_Selenium_Project\\Images\\MetrumLogo.PNG"));
+        ImageIO.write(screenshot.getImage(),"PNG",new File("Image"));
 
         Thread.sleep(2000);
 
