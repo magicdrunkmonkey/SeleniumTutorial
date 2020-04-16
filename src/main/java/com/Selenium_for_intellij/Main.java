@@ -27,12 +27,16 @@ public class Main {
         Thread.sleep(2000);
 
         //Fånga Metrum Logo på sidan Metrum PQX Web
-        WebElement webElement = obj.findElement(By.cssSelector("#metrumLogo"));
-        Screenshot screenshot = new AShot().takeScreenshot(obj, webElement);
+        WebElement webElement1 = obj.findElement(By.cssSelector("#metrumLogo"));
+        Screenshot screenshot1 = new AShot().takeScreenshot(obj, webElement1);
+
+        WebElement webElement2 = obj.findElement(By.cssSelector("#customerLogo"));
+        Screenshot screenshot2 = new AShot().takeScreenshot(obj, webElement2);
 
         Thread.sleep(2000);
 
-        ImageIO.write(screenshot.getImage(),"PNG",new File(System.getProperty("user.dir")+"\\Images\\Image.png"));
+        ImageIO.write(screenshot1.getImage(),"PNG",new File(System.getProperty("user.dir")+"\\Images\\Image1.png"));
+        ImageIO.write(screenshot2.getImage(),"PNG",new File(System.getProperty("user.dir")+"\\Images\\Image2.png"));
 
         Thread.sleep(2000);
 
