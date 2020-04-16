@@ -32,7 +32,7 @@ public class Main {
 
         Thread.sleep(2000);
 
-        ImageIO.write(screenshot.getImage(),"PNG",new File("Image"));
+        ImageIO.write(screenshot.getImage(),"PNG",new File(System.getProperty("user.dir")+"\\Images\\Image.png"));
 
         Thread.sleep(2000);
 
